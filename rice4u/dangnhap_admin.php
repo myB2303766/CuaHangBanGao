@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 session_start();
-require 'db.php';
+require_once __DIR__ . '/includes/db.php';
 $thong_bao = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập Admin - Cửa Hàng Gạo Rice4U</title>
-    <link href="./asset/css/header.css" rel="stylesheet">
-    <link href="./asset/css/footer.css" rel="stylesheet">
+    <link href="/rice4u/asset/header.css" rel="stylesheet">
+    <link href="/rice4u/asset/footer.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             content: "";
             position: absolute;
             top: -20px; left: -20px; right: -20px; bottom: -20px; 
-            background: url('bgr.jpg') no-repeat center center;
+            background: url('/rice4u/asset/images/bgr.jpg') no-repeat center center;
             background-size: cover;
             filter: blur(6px);
             z-index: -2;
@@ -134,12 +134,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <header>
         <div class="logo-navi">
-            <a href="./trangchu.html"><img class="logo" src="./asset/img/logo.png" alt="Logo"></a>
+            <a href="./trangchu.php"><img class="logo" src="/rice4u/asset/images/logo.png" alt="Logo"></a>
             <nav>
                 <ul class="dieu-huong">
-                    <li><a href="./trangchu.html">Trang Chủ</a></li>
-                    <li><a href="./sanpham.html">Sản Phẩm</a></li>
-                    <li><a href="./lienhe.html">Liên Hệ</a></li>
+                    <li><a href="./trangchu.php">Trang Chủ</a></li>
+                    <li><a href="./sanpham.php">Sản Phẩm</a></li>
+                    <li><a href="./lienhe.php">Liên Hệ</a></li>
                 </ul>
             </nav>
         </div>
@@ -148,13 +148,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button class="login-button"><a href="./dangnhap.php">Đăng Nhập</a></button>
             <button class="signup-button"><a href="./dangky.php">Đăng Ký</a></button>
             <div class="icon">
-                <a href="./giohang.html">
+                <a href="./giohang.php">
                     <i class="fa-solid fa-cart-shopping"><span class="soluong">0</span></i>
                 </a>
                 <div class="user-icon">
                     <a href="./dangnhap.php"><i class="fa-solid fa-user"></i></a>
                     <div class="log-out">
-                        <a href="./profile.html">Thông tin cá nhân</a>
+                        <a href="./hoso.php">Thông tin cá nhân</a>
                         <button class="logout-button">Đăng xuất</button>
                     </div>
                 </div>
@@ -195,14 +195,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
             
             <div class="back-link">
-                <a href="index.php">&larr; Quay lại trang khách hàng</a>
+                <a href="trangchu.php">&larr; Quay lại trang khách hàng</a>
             </div>
         </div>
     </main>
 
     <footer>
         <div class="footer-column">
-            <img class="logo" src="./asset/img/logo.png" alt="Logo">
+            <img class="logo" src="/rice4u/asset/images/logo.png" alt="Logo">
         </div>
         <div class="footer-column">
             <h3>Về chúng tôi</h3>
@@ -247,3 +247,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </script>
 </body>
 </html>
+

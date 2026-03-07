@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 // Chặn nếu chưa đăng nhập hoặc không phải admin
 if (!isset($_SESSION['ma_tk']) || $_SESSION['vai_tro'] !== 'admin') {

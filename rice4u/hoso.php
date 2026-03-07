@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 require 'db.php';
 
@@ -211,9 +211,10 @@ if (!$khach_hang) {
         </form>
         
         <div class="action-links">
-            <a href="index.php">⬅ Về Trang chủ</a>
+            <a href="trangchu.php">⬅ Về Trang chủ</a>
             <a href="dangxuat.php" class="logout">Đăng xuất</a>
         </div>
     </div>
 </body>
 </html>
+

@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 session_start();
-require 'db.php';
+require_once __DIR__ . '/includes/db.php';
 
 // Kiểm tra bảo mật: Phải đăng nhập và là Admin
 if (!isset($_SESSION['ID_TK']) || $_SESSION['vai_tro'] !== 'admin') {
